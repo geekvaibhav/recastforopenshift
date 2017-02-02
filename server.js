@@ -12,9 +12,7 @@ const client = new recastai.Client('d911d207ccd511462765920faf810adf')
 
 /* Server setup */
 const app = express()
-var port = process.env.PORT || 8080;
-
-
+var port = process.env.OPENSHIFT_NODEJS_PORT || 8080;
 
 app.use(bodyParser.json())
 app.post('/', (req, res) => myBot.listen(req, res))
