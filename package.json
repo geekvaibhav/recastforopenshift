@@ -1,7 +1,7 @@
 {
   "name": "recast_bot_for_heroku",
   "version": "0.0.1",
-  "description": "A dev Gear for Recast to deploy on Heroku",
+  "description": "A dev Gear for Recast to deploy on OpenShift",
   "main": "server.js",
   "dependencies": {
     "body-parser": "^1.16.0",
@@ -53,7 +53,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/geekvaibhav/recastforheroku.git"
+    "url": "https://github.com/geekvaibhav/recastforopenshift.git"
   },
   "keywords": [
     "Vaibhav",
@@ -65,7 +65,7 @@
   "author": "VaibhavS",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/geekvaibhav/recastforheroku/issues"
+    "url": "https://github.com/geekvaibhav/recastforopenshift.git/issues"
   },
-  "homepage": "https://github.com/geekvaibhav/recastforheroku#readme"
+  "homepage": "https://github.com/geekvaibhav/recastforopenshift.git#readme"
 }
