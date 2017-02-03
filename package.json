@@ -1,5 +1,5 @@
 {
-  "name": "recast_bot_for_heroku",
+  "name": "recast_bot_for_Openshift",
   "version": "0.0.1",
   "description": "A dev Gear for Recast to deploy on OpenShift",
   "main": "server.js",
