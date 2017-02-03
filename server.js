@@ -16,7 +16,12 @@ var port = process.env.OPENSHIFT_NODEJS_PORT || 8080;
 
 app.use(bodyParser.json())
 app.post('/', (req, res) => myBot.listen(req, res))
-app.listen(port, () => console.log('Bot running on port', port))
+//app.listen(port, () => console.log('Bot running on port', port))
+
+app.listen(app.get('port'),server_ip_address, function () {
+     console.log("Express server listening on port " + app.get('port'));
+ });
+
 
 /* When a bot receive a message */
 myBot.onTextMessage(message => {
