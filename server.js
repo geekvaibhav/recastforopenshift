@@ -5,10 +5,10 @@ const express = require('express')
 const bodyParser = require('body-parser')
 
 /* Bot Connector connection */
-const myBot = new BotConnector({ userSlug: '', botId: '', userToken: '' })
+const myBot = new BotConnector({ userSlug: 'geekvaibhav', botId: '588b3523e807fe2c951faa2f', userToken: 'f7e0e721c3a1de2efb5378f8e7044b73' })
 
 /* Recast.AI API connection */
-const client = new recastai.Client('')
+const client = new recastai.Client('a7a706351177d232d7c1efca6cb6e9d6')
 
 /* Server setup */
 const app = express()
@@ -20,6 +20,7 @@ app.post('/', (req, res) => myBot.listen(req, res))
 
 app.listen(app.get('port'),server_ip_address, function () {
      console.log("Express server listening on port " + app.get('port'));
+     ip = process.env.IP || process.env.OPENSHIFT_NODEJS_IP || '0.0.0.0',
  });
 
 
